@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>VidShrink Privacy Policy</title>
+
+    <style>
+        /* -------------------------
+           THEME VARIABLES
+        ------------------------- */
+
+        :root {
+            --bg-main: #070B1A;
+            --bg-card: #0C1228;
+            --text-main: #EAF0FF;
+            --text-muted: #9AA4C7;
+            --accent: #1BB4E8;
+            --border: #1A2352;
+        }
+
+        body.light {
+            --bg-main: #F4F6FB;
+            --bg-card: #FFFFFF;
+            --text-main: #0B1022;
+            --text-muted: #5E678A;
+            --accent: #0078D4;
+            --border: #D9DEEF;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background: radial-gradient(circle at top center, #0E1640, var(--bg-main));
+            color: var(--text-main);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        body.light {
+            background: radial-gradient(circle at top center, #FFFFFF, var(--bg-main));
+        }
+
+        /* -------------------------
+           HEADER
+        ------------------------- */
+
+        .header {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+        }
+
+        .brand span {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 14px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        body.light .theme-toggle:hover {
+            background: rgba(0,0,0,0.05);
+        }
+
+        /* -------------------------
+           CARD
+        ------------------------- */
+
+        .card {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 32px;
+            background: var(--bg-card);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        body.light .card {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 2rem;
+        }
+
+        .updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            margin-top: 32px;
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .brand span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="brand">
+        <img src="VidShrink_Icon - White BG.png" alt="VidShrink logo">
+        <span>VidShrink</span>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        Toggle theme
+    </button>
+</div>
+<div class="card">
+    <h1>VidShrink Privacy Policy</h1>
+    <div class="updated">Last updated: 14 January 2026</div>
+
+    <p>
+        VidShrink is a video compression application developed by <strong>RoolTek</strong>.
+        This Privacy Policy explains how data is handled when you use the app.
+    </p>
+
+    <p>
+        If you have any questions, you can contact us at:
+        <strong>7001tek@gmail.com</strong>
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+        <li><strong>Videos are processed locally on your device.</strong> VidShrink does not upload
+            your videos to any server.
+        </li>
+        <li>The app may display advertisements provided by third-party ad services.</li>
+        <li>VidShrink only accesses files and folders you explicitly choose.</li>
+    </ul>
+
+    <h2>Video Processing</h2>
+    <p>
+        VidShrink compresses videos directly on your device.
+        The app reads the video file you select, creates a compressed copy, and saves it to a
+        location you choose.
+        Video files are not uploaded or stored on external servers.
+    </p>
+
+    <h2>Permissions</h2>
+    <p>
+        <strong>Media access / storage permissions</strong><br>
+        Used only to allow you to select videos and choose where compressed files are saved.
+        VidShrink does not access files without your action.
+    </p>
+
+    <h2>Notifications</h2>
+    <p>
+        Notifications may be used to show compression progress or completion.
+        You can disable notifications at any time in system or app settings.
+    </p>
+
+    <h2>Advertising</h2>
+    <p>
+        VidShrink may show advertisements from third-party providers such as Google AdMob.
+        These services may collect information such as device identifiers, approximate location,
+        app interaction data, and ad performance data in order to display and measure ads.
+    </p>
+
+    <p>
+        Data collection by advertising providers depends on your device settings and the provider’s
+        own privacy policy.
+    </p>
+
+    <h2>Data Collected</h2>
+    <p>
+        VidShrink does not require user accounts and does not collect video content.
+        Depending on enabled features and third-party SDKs, limited data may be collected:
+    </p>
+
+    <ul>
+        <li>Device and app information (Android version, device model)</li>
+        <li>Basic usage data (screen views, ad interactions)</li>
+        <li>Crash or diagnostic data (if crash reporting is enabled)</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>
+        Limited data may be shared with advertising providers strictly for ad delivery and
+        measurement.
+        VidShrink does not sell personal data.
+    </p>
+
+    <h2>Data Retention</h2>
+    <p>
+        VidShrink does not store video files on servers.
+        Videos remain on your device.
+        Third-party services may retain data according to their own policies.
+    </p>
+
+    <h2>Children’s Privacy</h2>
+    <p>
+        VidShrink is not intended for children under the age of 13.
+        If you believe a child’s data has been collected through third-party services, please
+        contact us.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+        VidShrink uses standard best practices and reputable third-party services.
+        However, no method of electronic storage or transmission is completely secure.
+    </p>
+
+    <h2>Your Choices</h2>
+    <ul>
+        <li>You can disable notifications at any time.</li>
+        <li>You can control file access permissions in Android settings.</li>
+        <li>You may control ad personalization through device privacy settings.</li>
+    </ul>
+
+    <h2>Policy Updates</h2>
+    <p>
+        This Privacy Policy may be updated occasionally.
+        Any changes will be reflected on this page with a new “Last updated” date.
+    </p>
+
+    <footer>
+        <strong>If you have questions about this policy Contact: 7001tek@gmail.com</strong>
+    </footer>
+</div>
+
+<!-- THEME SCRIPT -->
+<script>
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+        document.body.classList.add("light");
+    }
+
+    function toggleTheme() {
+        document.body.classList.toggle("light");
+        localStorage.setItem(
+            "theme",
+            document.body.classList.contains("light") ? "light" : "dark"
+        );
+    }
+</script>
+
+</body>
+</html>
